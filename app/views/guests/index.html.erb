@@ -1,0 +1,40 @@
+
+
+<div class="container">
+  <div class="row">
+  <div class="col-md-3">
+  <%= link_to new_guest_path, remote: true do %>
+    <button class="btn btn-default"><span class="glyphicon glyphicon-plus"></span> Add Guest </button>
+  <% end %>
+
+   <div id="guest-form" style="display:none;"></div> 
+  </div>
+
+  <div class="col-md-8"> 
+    <h2>Guests</h2>
+    
+      <div class="row">
+        <table class="table table-striped">
+          <thead> 
+            <tr> 
+              <th>Name</th> 
+              <th>Table</th> 
+              <th></th>
+              <th></th>
+            </tr>
+          </thead> 
+
+          <tbody id="guests">
+            <%= render @guests %>
+          </tbody> 
+        </table>
+      </div>
+    
+  </div>  
+
+<br>
+<br>
+
+</div>
+
+

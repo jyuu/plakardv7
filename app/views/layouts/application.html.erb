@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Perfect Touch</title>
+
+  <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" %>
+  <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+  <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+  <script src="js/bootstrap-image-gallery.min.js"></script>
+  <%= javascript_include_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
+  <%= csrf_meta_tags %>
+  <link href='//fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
+
+<script> 
+  function myFunction(){
+	  $(".be").css({
+	      'z-index' : '5',
+	      'opacity' : '1'
+	    });
+	}
+</script> 
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default">
+	 
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+          </button>
+<br>
+	      <%= link_to "The Perfect Touch", root_path, class: "navbar-brand" %>
+
+
+	      <br/> 
+	      <br/>
+	      <div class="col-sm-12">
+	      	<div class="horizontalLine"></div>
+		      	<br>
+				Breathe. Planning a wedding is no small endeavor. It's not cheap, and it's not easy. We don't have the formula for the perfect wedding, and we're not going to boast that we can come close to helping you get there. But the one thing we do know: key to failure is trying to please everyone. So stop chasing others. Be you! Here you'll find some free placards we love. Upload your guest list and select a design. All we ask in return is that you share this source with others as they plan their big day. <br>
+				
+			</div>
+
+			
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    	
+	      <ul class="nav navbar-nav">
+	        <li><a  href="guests" class="hello">Step 1: Guests</a></li>
+	        <li><a  href="fonter" class="hello">Step 2: Fonts</a></li>
+	        <li><a href="option" class="hello">Step 3: Placards</a></li>
+	    </ul>
+    </div>
+
+	</nav>
+
+
+		
+
+<div class="wrapper"> 
+	<div class="container">
+
+<%= yield %>
+
+	</div>
+
+	<div class="push">
+	</div>
+</div>
+
+
+
+
+<div class="footer">
+	With <i class="glyphicon glyphicon-heart"></i> from <a href="https://github.com/jyuu">Joyce</a>.
+</div>
+
+</body>
+</html>
+

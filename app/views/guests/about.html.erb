@@ -1,0 +1,124 @@
+
+
+ 
+<div class="container">
+<h2>FONT SELECTION</h2>
+
+
+<%= link_to image_tag("font1.png", width: 180), :action => "option", :controller => "guests", :fontfam => 1 %> <br>
+<%= link_to image_tag("font2.png", width: 180, height: 40), :action => "option", :controller => "guests", :fontfam => 2 %> <br>
+<%= link_to image_tag("font3.png", width: 180), :action => "option", :controller => "guests", :fontfam => 3 %> <br>
+<%= link_to image_tag("font4.png", width: 180), :action => "option", :controller => "guests", :fontfam => 4 %> <br>
+<%= link_to image_tag("font5.png", width: 180), :action => "option", :controller => "guests", :fontfam => 5 %> 
+</div>
+</div>
+
+<div class="container">
+  <h2>Placard Options</h2>
+  <p>Once you've finalized your guest list and font, check out the placards we have in store. Select one (or more!) of your liking and print out the result. No more typing and re-typing names. All you need to do is cut & fold. If the icons are too small, select to see our slideshow below.</p>
+   
+   <!-- Trigger the modal with a button -->
+        
+      <a href="https://wedding-placards.herokuapp.com/assets/pla1-e4093ee77f3c628f27041ed27abd80f34e75673fb09e311d8705def403608496.png" title="Art Deco from Martha Stewart Designs" data-gallery><p><em>Our Placard Slideshow</em></p></a>
+      <a href="https://wedding-placards.herokuapp.com/assets/pla2-75803da4f0fb6a6b4b48207fa786d2144c9353e86e0482e32034248c99b31dae.png" title="Art Deco in Orange from Martha Stewart Designs" data-gallery></a>
+      <a href="https://wedding-placards.herokuapp.com/assets/pla3-dc9724b5594405c86804e9f19c521829e2afac983681ae0809e0be9711913348.png" title="Swirly Scissors from Martha Stewart Designs" data-gallery></a>
+      <a href="https://wedding-placards.herokuapp.com/assets/pla4-d6748673ade2ee11bd3886596567c5c6eca6a4145b92f1d24b4947fd566ff9c7.png" title="Refined Art from Martha Steward Designs" data-gallery></a>
+      <a href="https://wedding-placards.herokuapp.com/assets/pla5-43e23bda5addb16be0cfa3b9f8e4729dfc0f41dab795908baf58588501a5dacd.png" title="Checkboard Yellow from Amy Delightful" data-gallery></a>
+      <a href="https://wedding-placards.herokuapp.com/assets/pla6-825f2e39b2498477319ea8f6ddb42cb6f89b3c21fd9a7d6994fb2a61f4f00554.png" title="Polka Dots in a Cloud from Amy Delightful" data-gallery></a>
+      <a href="https://wedding-placards.herokuapp.com/assets/pla7-c6faf0bcb0496dc0db433897fa6d9f6a622ba38252e18d51bf0a881ecdbccc23.png" title="Green Elegance from Amy Delightful" data-gallery></a>
+      <a href="https://wedding-placards.herokuapp.com/assets/pla8-9bd496c90052b82793ccb84f30d47db471a239f4ef329d58048c2879197fe083.png" title="Baby Pink Room from Amy Delightful" data-gallery></a>
+      <a href="https://wedding-placards.herokuapp.com/assets/pla9-aa485bf1073e6cfb2aaa0fe1d915190b14ecad3e6ba581b0f923d411e6ddfabb.png" title="Striped Purple from Evermine" data-gallery></a>
+      <a href="https://wedding-placards.herokuapp.com/assets/pla10-cc5510408912243581961d7931ac80528b3997db3b693862ceee8a55f14590ab.png" title="Checkerboard Blue from Amy Delightful" data-gallery></a>
+      <a href="https://wedding-placards.herokuapp.com/assets/pla11-dfc1b33d6630a2654629d14b2f0259d7ae05a379bc52f5a07b734bcee1375651.png" title="Miss Pretty in Pink from Amy Delightful" data-gallery></a>
+      <a href="https://wedding-placards.herokuapp.com/assets/pla12-b647953a9907f2fcc191c567f47917c26db745ab775355533fdbc94f3285e132.png" title="Polka Dotted Bare from Amy Delightful" data-gallery></a>
+      <a href="https://wedding-placards.herokuapp.com/assets/pla13-53e4f58e32754ebaffe61e2edf06d7727dd3229460318bbf151b250fb9a2c1c3.png" title="Swollen Apple from Amy Delightful" data-gallery></a>
+      <a href="https://wedding-placards.herokuapp.com/assets/pla14-334cf0c00c810aab1d57b632c022af80bf6e771f9cea2a48ed72c3cb19b02ce3.png" title="Watercolor Feather from A Fabulous Fete" data-gallery></a>
+      <a href="https://wedding-placards.herokuapp.com/assets/pla15-d297e5bc5a5ea7701f5af5271315a7aeed1cd27cb027d176f31af763eb510648.png" title="Home Sweet Home from Evermine" data-gallery></a>
+
+
+   
+
+ 
+  <div class="row">
+    <div class="col-sm-12">
+  
+    <%= link_to image_tag("pla1.png", :width =>150, :height => 100), :action => "option", :controller => "guests", :choice => 1, :fontfam => 1, :fontsize => 15, :format => "pdf" %> 
+
+    <%= link_to image_tag("pla2.png", :width =>150, :height => 100), :action => "option", :controller => "guests", :choice => 2, :format => "pdf" %> 
+
+    <%= link_to image_tag("pla3.png", :width =>150, :height => 100), :action => "option", :controller => "guests", :choice => 3, :format => "pdf" %> 
+
+    <%= link_to image_tag("pla4.png", :width =>150, :height => 100), :action => "option", :controller => "guests", :choice => 4, :format => "pdf" %> 
+
+
+
+    <%= link_to image_tag("pla5.png", :width =>150, :height => 100), :action => "option", :controller => "guests", :choice => 5, :format => "pdf" %> 
+
+    <%= link_to image_tag("pla6.png", :width =>150, :height => 100), :action => "option", :controller => "guests", :choice => 6, :format => "pdf" %> 
+
+    <%= link_to image_tag("pla7.png", :width =>150, :height => 100), :action => "option", :controller => "guests", :choice => 7, :format => "pdf" %> 
+
+    <%= link_to image_tag("pla8.png", :width =>150, :height => 100), :action => "option", :controller => "guests", :choice => 8, :format => "pdf" %> 
+    
+    <%= link_to image_tag("pla9.png", :width =>150, :height => 100), :action => "option", :controller => "guests", :choice => 9, :format => "pdf" %> 
+
+    <%= link_to image_tag("pla10.png", :width =>150, :height => 100), :action => "option", :controller => "guests", :choice => 10, :format => "pdf" %> 
+
+    <%= link_to image_tag("pla11.png", :width =>150, :height => 100), :action => "option", :controller => "guests", :choice => 11, :format => "pdf" %> 
+
+    <%= link_to image_tag("pla12.png", :width =>150, :height => 100), :action => "option", :controller => "guests", :choice => 12, :format => "pdf" %> 
+
+    <%= link_to image_tag("pla13.png", :width =>150, :height => 100), :action => "option", :controller => "guests", :choice => 13, :format => "pdf" %> 
+
+    <%= link_to image_tag("pla14.png", :width =>150, :height => 100), :action => "option", :controller => "guests", :choice => 14, :format => "pdf" %> 
+
+    <%= link_to image_tag("pla15.png", :width =>150, :height => 100), :action => "option", :controller => "guests", :choice => 15, :format => "pdf" %> 
+
+  </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+
+
+
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+   
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
