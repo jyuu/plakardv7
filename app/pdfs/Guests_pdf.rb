@@ -1,9 +1,9 @@
 class GuestsPdf < Prawn::Document
 	def initialize(guests, choice, fontfam, fontsize)
 		super(top_margin:40)
-		if session[:guest_ids] && session[:guest_ids].include?(guest.id)
+		
 			@guests = guests
-		end 
+
 		
 		# @even = @guests.values_at(* guests.each_index.select{|d| d.even?})
 		# @odd = @guests.values_at(* guests.each_index.select{|d| d.odd?})
@@ -45,7 +45,7 @@ class GuestsPdf < Prawn::Document
 		table_size = @fontsize.to_i-5
 
 		font("font_standard")
-		if length > 4 
+		if length >= 4 
 			1.upto(length/4.floor) do |i| 
 				define_grid(:columns => 2, :rows => 4, :gutter => 2)
 				grid(1,0).bounding_box do
@@ -53,7 +53,7 @@ class GuestsPdf < Prawn::Document
 					:postion => :center, :vposition => :center
 					float do
 						bounding_box([bounds.width/3-10,bounds.height*3], :width => 100) do 
-							text @guests[4*i-4].table_num.to_s, :valign => :center, :align => :center, :size => name_size
+							text @guests[4*i-4].name.to_s, :valign => :center, :align => :center, :size => name_size
 							move_down gap
 							text @guests[4*i-4].table_num.to_s, :valign => :center, :align => :center, :size => table_size
 						end 
@@ -92,7 +92,9 @@ class GuestsPdf < Prawn::Document
 						end 
 					end 
 				end 
-				start_new_page
+				if length > 4 
+					start_new_page
+				end 
 			end 
 		end 
 
@@ -106,7 +108,7 @@ class GuestsPdf < Prawn::Document
 						:postion => :center, :vposition => :center
 						float do
 							bounding_box([bounds.width/3-10,bounds.height*3], :width => 100) do 
-								text @guests[length-length%4].table_num.to_s, :valign => :center, :align => :center, :size => name_size
+								text @guests[length-length%4].name, :valign => :center, :align => :center, :size => name_size
 								move_down gap
 								text @guests[length-length%4].table_num.to_s, :valign => :center, :align => :center, :size => table_size
 							end 

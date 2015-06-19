@@ -1,4 +1,6 @@
+
 <% if session[:guest_ids] && session[:guest_ids].include?(guest.id) %> 
+	 
 	<tr> 
 		<td><%= guest.name %></td>
 		<td> <%= guest.table_num %> </td> 

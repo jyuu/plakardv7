@@ -17,18 +17,18 @@ class GuestsController < ApplicationController
     @choice = params[:choice].to_s
     @fontsize = params[:fontsize].to_s 
     @fontfam = params[:fontfam].to_s
+    @guests = Guest.all
 
-      @guests = Guest.all
-      respond_to do |format|
-        format.html
-        format.pdf do 
-          pdf = GuestsPdf.new(@guests, @choice, @fontfam, @fontsize)
-          send_data pdf.render, filename: "print.pdf",
-                      type: "application/pdf",
-                      disposition: "inline" 
+    respond_to do |format|
+      format.html
+      format.pdf do 
+        pdf = GuestsPdf.new(@guests, @choice, @fontfam, @fontsize)
+        send_data pdf.render, filename: "print.pdf",
+                    type: "application/pdf",
+                    disposition: "inline" 
 
-        end 
       end 
+    end 
     
   end
 
